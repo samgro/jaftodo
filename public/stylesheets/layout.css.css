@@ -1,0 +1,68 @@
+/* Layout */
+/* line 8, ../../app/assets/stylesheets/layout.css.scss */
+body, textarea {
+  font-family: "Lucida Grande", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 13, ../../app/assets/stylesheets/layout.css.scss */
+body {
+  background: white;
+  color: #333333;
+  margin: 24px 0 72px 200px;
+}
+
+/* line 20, ../../app/assets/stylesheets/layout.css.scss */
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+/* line 24, ../../app/assets/stylesheets/layout.css.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 33, ../../app/assets/stylesheets/layout.css.scss */
+a, a:visited, a:hover, a:focus {
+  color: #1166cc;
+}
+/* line 37, ../../app/assets/stylesheets/layout.css.scss */
+a, a:visited {
+  text-decoration: none;
+}
+/* line 41, ../../app/assets/stylesheets/layout.css.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* line 46, ../../app/assets/stylesheets/layout.css.scss */
+pre, code {
+  font-family: Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace, serif;
+}
+
+/* line 49, ../../app/assets/stylesheets/layout.css.scss */
+h1, h2, h3, p, ul, ol, table, blockquote {
+  margin-bottom: 24px;
+}
+
+/* line 52, ../../app/assets/stylesheets/layout.css.scss */
+.left {
+  float: left;
+}
+
+/* line 55, ../../app/assets/stylesheets/layout.css.scss */
+.right {
+  float: right;
+}
+
+/* line 58, ../../app/assets/stylesheets/layout.css.scss */
+.hidden {
+  display: none;
+}
+
+/* line 62, ../../app/assets/stylesheets/layout.css.scss */
+ul.inline-list li {
+  display: inline;
+}

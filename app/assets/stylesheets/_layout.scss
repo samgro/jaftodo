@@ -1,0 +1,64 @@
+/* Layout */
+@import "colors";
+@import "sizes";
+
+$monospace: Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace, serif;
+
+// Body styles
+body, textarea {
+  font-family: "Lucida Grande", "Segoe UI", sans-serif;
+  font-size: $normal-size;
+  line-height: $line-height;
+}
+body {
+  background: $body-bg;
+  color: $body-color;
+}
+
+// Header styles
+h1 {
+	font-size: $x-large-size;
+  line-height: $line-height * 2;
+}
+h2 {
+	font-size: $large-size;
+}
+
+// Link styles
+a {
+  &,
+  &:visited,
+  &:hover,
+  &:focus {
+  	color: $link-color;
+  }
+  &,
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+pre, code {
+	font-family: $monospace;
+}
+h1,h2,h3,p,ul,ol,table,blockquote { 
+  margin-bottom: $line-height; 
+}
+.left { 
+  float: left;
+}
+.right { 
+  float: right;
+}
+.hidden {
+	display: none;
+}
+ul.inline-list {
+  li {
+    display: inline;
+	}
+}
