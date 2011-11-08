@@ -6,4 +6,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require underscore
+//= require backbone
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
