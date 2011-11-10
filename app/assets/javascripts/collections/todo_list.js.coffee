@@ -1,6 +1,6 @@
 # Collection of Todos
 window.TodoList = Backbone.Collection.extend
-  model:  Todo  
+  model:  Todo
   url:    '/todos'
       
   done: ->

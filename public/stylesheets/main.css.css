@@ -269,7 +269,6 @@ ul.inline-list li {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background: url(destroy.png) no-repeat 0 0;
 }
 
 /* line 111, ../../app/assets/stylesheets/_todo.scss */

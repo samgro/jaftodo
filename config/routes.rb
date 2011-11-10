@@ -1,5 +1,5 @@
 Jaftodo::Application.routes.draw do
 
   # root :to => 'todos#index'
-  resource :todos
+  resources :todos
 end

@@ -37,7 +37,7 @@ window.TodoView = Backbone.View.extend
     this.input.focus()
   
 
-window.AppView = Backbone.View.extend
+window.IndexView = Backbone.View.extend
   
   el: $('#todoapp')
   
@@ -48,12 +48,13 @@ window.AppView = Backbone.View.extend
   
   initialize: ->
     this.input = this.$('#new-todo')
-    
+    window.Todos = this.options.collection
     Todos.bind('add',   this.addOne, this)
     Todos.bind('reset', this.addAll, this)
     Todos.bind('all',   this.render, this)
     
-    #Todos.fetch()
+    this.render()
+    # Todos.fetch()
   
   render: ->
     this.$('#todo-stats').html this.statsTemplate
@@ -73,5 +74,3 @@ window.AppView = Backbone.View.extend
     if (text? and e.keyCode is 13)
       Todos.create text: text
       this.input.val('')
-  
-window.App = new AppView
