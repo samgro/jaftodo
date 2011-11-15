@@ -45,6 +45,7 @@ window.IndexView = Backbone.View.extend
   
   events:
     'keypress #new-todo'  : 'createOnEnter'
+    'click .todo-clear a' : 'clearCompleted'
   
   initialize: ->
     this.input = this.$('#new-todo')
@@ -53,8 +54,8 @@ window.IndexView = Backbone.View.extend
     Todos.bind('reset', this.addAll, this)
     Todos.bind('all',   this.render, this)
     
+    this.addAll()
     this.render()
-    # Todos.fetch()
   
   render: ->
     this.$('#todo-stats').html this.statsTemplate
@@ -74,3 +75,8 @@ window.IndexView = Backbone.View.extend
     if (text? and e.keyCode is 13)
       Todos.create text: text
       this.input.val('')
+
+  clearCompleted: ->
+    for todo in Todos.done()
+      todo.destroy()
+    return false
