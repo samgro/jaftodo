@@ -17,3 +17,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'compass', '>= 0.11.5'
 end
+
+group :development do
+  gem 'heroku'
+end
